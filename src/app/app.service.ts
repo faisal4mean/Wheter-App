@@ -11,7 +11,7 @@ export class AppService {
 
 
   getWhether(cityName: any): Observable<any> {
-    return this.http.get<any[]>(`http://api.weatherapi.com/v1/current.json?key=20fe34f6546a4391bb2161548210504&q=${cityName}&aqi=no`)
+    return this.http.get<any[]>(`https://api.weatherapi.com/v1/current.json?key=20fe34f6546a4391bb2161548210504&q=${cityName}&aqi=no`)
 
   }
 
